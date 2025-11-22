@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm dev)",
+      "Bash(node:*)",
+      "Bash(npm --version)",
+      "Bash(npm install -g pnpm)",
+      "Bash(pnpm install)",
+      "Bash(pnpm dev:*)",
+      "Bash(netstat:*)",
+      "Bash(lsof:*)",
+      "Bash(findstr:*)",
+      "Bash(tasklist:*)",
+      "Bash(taskkill:*)",
+      "Bash(for:*)",
+      "Bash(do taskkill:*)",
+      "Bash(echo:*)",
+      "Bash(done:*)",
+      "Bash(killall:*)",
+      "Bash(pkill:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
