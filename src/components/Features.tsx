@@ -1,37 +1,27 @@
 import React from 'react';
-import { Mic, FileText, Target, Zap, Shield, Globe } from 'lucide-react';
+import { Image, Brain, Zap, FileText } from 'lucide-react';
 
 const Features: React.FC = () => {
   const features = [
     {
-      icon: <Mic className="w-8 h-8" />,
-      title: '实时语音转录',
-      description: '高精度语音识别，支持多人对话，实时生成文字内容，准确率高达99.9%'
+      icon: <Image className="w-8 h-8" />,
+      title: '以图搜图',
+      description: '上传服装款式图，从预设分类图库中检索相似历史款式，展示成本信息和工艺BOM，一键跳转PLM系统查看详情'
+    },
+    {
+      icon: <Brain className="w-8 h-8" />,
+      title: 'AI智能分析',
+      description: '基于Doubao-Seed-1.6多模态大模型，支持纯AI分析与历史数据增强分析两种模式，输出详细工艺分析与价格建议'
     },
     {
       icon: <FileText className="w-8 h-8" />,
-      title: '智能内容总结',
-      description: 'AI自动分析会议内容，提取关键信息，生成结构化的会议纪要和行动项'
-    },
-    {
-      icon: <Target className="w-8 h-8" />,
-      title: '关键词提取',
-      description: '自动识别和标记重要概念、决策点和待办事项，让重点一目了然'
+      title: '综合报告',
+      description: '结合以图搜图和AI分析结果，生成完整的款式工艺成本分析报告，为设计决策提供数据支撑'
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: '快速处理',
-      description: '3秒内完成纪要生成，支持大文件处理，让您的会议记录更加高效'
-    },
-    {
-      icon: <Shield className="w-8 h-8" />,
-      title: '数据安全',
-      description: '企业级安全保障，数据加密存储，符合国际安全标准，保护您的隐私'
-    },
-    {
-      icon: <Globe className="w-8 h-8" />,
-      title: '多语言支持',
-      description: '支持50+种语言和方言，适应全球化团队协作需求'
+      title: '图片清洗',
+      description: '上传历史款式图片至图片库，作为底层训练数据库，持续优化识别准确率和成本估算能力'
     }
   ];
 
@@ -41,17 +31,17 @@ const Features: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            强大的AI功能
+            四大核心功能
             <br />
-            <span className="text-blue-400">让会议记录更智能</span>
+            <span className="text-blue-400">赋能设计与成本管理</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            集成最先进的AI技术，为您提供全方位的会议纪要解决方案
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            集成AI识图、智能分析和数据库匹配，为设计者提供秒级成本估算方案
           </p>
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -61,7 +51,7 @@ const Features: React.FC = () => {
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold text-white mb-4">{feature.title}</h3>
-              <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+              <p className="text-gray-300 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

@@ -1,30 +1,30 @@
 import React from 'react';
-import { Upload, Mic, Brain, Download } from 'lucide-react';
+import { Upload, Image, BarChart3, FileCheck } from 'lucide-react';
 
 const HowItWorks: React.FC = () => {
   const steps = [
     {
       icon: <Upload className="w-8 h-8" />,
-      title: '上传音频',
-      description: '上传会议录音或实时录音，支持多种音频格式',
+      title: '上传款式图',
+      description: '上传服装设计图或PLM系统中的款式图',
       color: 'from-blue-500 to-cyan-500'
     },
     {
-      icon: <Mic className="w-8 h-8" />,
-      title: '语音转录',
-      description: 'AI自动识别语音内容，生成准确的文字记录',
+      icon: <Image className="w-8 h-8" />,
+      title: 'AI识图分析',
+      description: '自动识别品类、面料、工艺特征，匹配历史数据',
       color: 'from-cyan-500 to-teal-500'
     },
     {
-      icon: <Brain className="w-8 h-8" />,
-      title: '智能分析',
-      description: 'AI分析内容，提取关键信息和行动项',
+      icon: <BarChart3 className="w-8 h-8" />,
+      title: '成本估算',
+      description: '基于识图结果与历史数据，精准估算生产成本',
       color: 'from-teal-500 to-green-500'
     },
     {
-      icon: <Download className="w-8 h-8" />,
-      title: '下载纪要',
-      description: '生成结构化会议纪要，支持多种格式导出',
+      icon: <FileCheck className="w-8 h-8" />,
+      title: '生成报告',
+      description: '输出详细的成本分析报告与工艺建议',
       color: 'from-green-500 to-blue-500'
     }
   ];
@@ -35,12 +35,12 @@ const HowItWorks: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            简单四步
+            从旧流程到新流程
             <br />
-            <span className="text-blue-400">生成完美会议纪要</span>
+            <span className="text-blue-400">效率提升90%</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            无需复杂操作，AI为您处理一切
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            传统核价需要20-120分钟，AI只需3分钟
           </p>
         </div>
 
@@ -68,7 +68,7 @@ const HowItWorks: React.FC = () => {
                   
                   {/* Content */}
                   <h3 className="text-xl font-semibold text-white mb-4">{step.title}</h3>
-                  <p className="text-gray-400">{step.description}</p>
+                  <p className="text-gray-300">{step.description}</p>
                 </div>
               </div>
             ))}

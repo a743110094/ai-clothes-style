@@ -17,7 +17,8 @@
       "Bash(echo:*)",
       "Bash(done:*)",
       "Bash(killall:*)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(pnpm build:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Mic, Brain } from 'lucide-react';
+import { Menu, X, Shirt, TrendingDown } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,22 +11,22 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <div className="relative">
-              <Brain className="w-8 h-8 text-gray-300" />
-              <Mic className="w-4 h-4 text-gray-400 absolute -bottom-1 -right-1" />
+              <Shirt className="w-8 h-8 text-gray-300" />
+              <TrendingDown className="w-4 h-4 text-gray-400 absolute -bottom-1 -right-1" />
             </div>
-            <span className="text-2xl font-bold text-white">AI会议纪要</span>
+            <span className="text-2xl font-bold text-white">AI服装成本分析</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-400 hover:text-blue-400 transition-colors">
-              功能特性
+            <a href="#features" className="text-gray-300 hover:text-blue-400 transition-colors">
+              核心功能
             </a>
-            <a href="#how-it-works" className="text-gray-400 hover:text-blue-400 transition-colors">
-              工作原理
+            <a href="#how-it-works" className="text-gray-300 hover:text-blue-400 transition-colors">
+              工作流程
             </a>
-            <a href="#testimonials" className="text-gray-400 hover:text-blue-400 transition-colors">
-              用户评价
+            <a href="#testimonials" className="text-gray-300 hover:text-blue-400 transition-colors">
+              成果展示
             </a>
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">
               立即体验
@@ -46,14 +46,14 @@ const Header: React.FC = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-4">
-              <a href="#features" className="text-gray-400 hover:text-blue-400 transition-colors">
-                功能特性
+              <a href="#features" className="text-gray-300 hover:text-blue-400 transition-colors">
+                核心功能
               </a>
-              <a href="#how-it-works" className="text-gray-400 hover:text-blue-400 transition-colors">
-                工作原理
+              <a href="#how-it-works" className="text-gray-300 hover:text-blue-400 transition-colors">
+                工作流程
               </a>
-              <a href="#testimonials" className="text-gray-400 hover:text-blue-400 transition-colors">
-                用户评价
+              <a href="#testimonials" className="text-gray-300 hover:text-blue-400 transition-colors">
+                成果展示
               </a>
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors w-fit">
                 立即体验
