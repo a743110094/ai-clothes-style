@@ -29,10 +29,10 @@ const Hero: React.FC = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
-          <button className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 flex items-center space-x-2 shadow-lg shadow-blue-600/25">
+          <a href="http://stylecost.semirapp.com:8501" target="_blank" rel="noopener noreferrer" className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 flex items-center space-x-2 shadow-lg shadow-blue-600/25">
             <span>立即体验</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
 
           <button className="group flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors">
             <div className="w-12 h-12 bg-gray-600/20 rounded-full flex items-center justify-center group-hover:bg-gray-500/30 transition-colors">

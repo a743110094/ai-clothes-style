@@ -28,9 +28,9 @@ const Header: React.FC = () => {
             <a href="#testimonials" className="text-gray-300 hover:text-blue-400 transition-colors">
               成果展示
             </a>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">
+            <a href="http://stylecost.semirapp.com:8501" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">
               立即体验
-            </button>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
