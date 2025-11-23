@@ -77,9 +77,9 @@ const HowItWorks: React.FC = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-colors shadow-lg shadow-blue-600/25">
+          <a href="http://stylecost.semirapp.com:8501" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-colors shadow-lg shadow-blue-600/25 inline-block">
             立即开始体验
-          </button>
+          </a>
         </div>
       </div>
     </section>
