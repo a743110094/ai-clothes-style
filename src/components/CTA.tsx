@@ -10,7 +10,7 @@ const CTA: React.FC = () => {
   ];
 
   return (
-    <section className="relative z-10 px-4 py-20 lg:px-8">
+    <section className="relative z-10 px-4 py-20 lg:px-8 min-h-screen flex items-center justify-center">
       <div className="max-w-4xl mx-auto text-center">
         {/* Main CTA Card */}
         <div className="bg-gradient-to-r from-blue-600/20 to-cyan-600/20 backdrop-blur-sm border border-blue-400/30 rounded-3xl p-12">

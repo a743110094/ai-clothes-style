@@ -26,8 +26,8 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="relative z-10 px-4 py-20 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section id="features" className="relative z-10 px-4 py-20 lg:px-8 min-h-screen flex items-center justify-center">
+      <div className="max-w-7xl mx-auto w-full">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
