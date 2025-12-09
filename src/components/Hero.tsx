@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
               <X className="w-8 h-8" />
             </button>
             <video
-              src="http://t6zd1urdx.hd-bkt.clouddn.com/12%E6%9C%888%E6%97%A5%20%281%29.mp4"
+              src="http://static-src.heaven96.site/12%E6%9C%888%E6%97%A5%20%281%29.mp4"
               controls
               autoPlay
               className="w-full h-auto rounded-lg"
