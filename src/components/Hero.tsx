@@ -1,7 +1,9 @@
-import React from 'react';
-import { ArrowRight, Play, Zap } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowRight, Play, Zap, X } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const [showVideoModal, setShowVideoModal] = useState(false);
+
   return (
     <section className="relative z-10 px-4 py-20 lg:px-8 min-h-screen flex items-start lg:items-center justify-center pt-20 lg:pt-0">
       <div className="max-w-7xl mx-auto text-center">
@@ -34,7 +36,10 @@ const Hero: React.FC = () => {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
 
-          <button className="group flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors">
+          <button 
+            onClick={() => setShowVideoModal(true)}
+            className="group flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors"
+          >
             <div className="w-12 h-12 bg-gray-600/20 rounded-full flex items-center justify-center group-hover:bg-gray-500/30 transition-colors">
               <Play className="w-5 h-5 ml-1" />
             </div>
@@ -58,6 +63,28 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      {showVideoModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+          <div className="relative max-w-4xl w-full mx-4">
+            <button
+              onClick={() => setShowVideoModal(false)}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+            >
+              <X className="w-8 h-8" />
+            </button>
+            <video
+              src="http://t6zd1urdx.hd-bkt.clouddn.com/12%E6%9C%888%E6%97%A5%20%281%29.mp4"
+              controls
+              autoPlay
+              className="w-full h-auto rounded-lg"
+            >
+              您的浏览器不支持视频播放。
+            </video>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

@@ -22,6 +22,9 @@ const Header: React.FC = () => {
             <a href="#features" className="text-gray-300 hover:text-blue-400 transition-colors">
               核心功能
             </a>
+            <a href="https://alidocs.dingtalk.com/i/nodes/14lgGw3P8vve3KLKHRgBK4en85daZ90D?corpId=dingbf6fa52cc4e8549e&utm_medium=im_card&iframeQuery=utm_medium%3Dim_card%26utm_source%3Dim&utm_scene=person_space&utm_source=im" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
+              产品文档
+            </a>
             <a href="#how-it-works" className="text-gray-300 hover:text-blue-400 transition-colors">
               工作流程
             </a>
@@ -48,6 +51,9 @@ const Header: React.FC = () => {
             <div className="flex flex-col space-y-4">
               <a href="#features" className="text-gray-300 hover:text-blue-400 transition-colors">
                 核心功能
+              </a>
+              <a href="https://alidocs.dingtalk.com/i/nodes/14lgGw3P8vve3KLKHRgBK4en85daZ90D?corpId=dingbf6fa52cc4e8549e&utm_medium=im_card&iframeQuery=utm_medium%3Dim_card%26utm_source%3Dim&utm_scene=person_space&utm_source=im" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
+                产品文档
               </a>
               <a href="#how-it-works" className="text-gray-300 hover:text-blue-400 transition-colors">
                 工作流程
