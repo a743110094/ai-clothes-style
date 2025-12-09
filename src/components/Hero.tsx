@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
           <div className="relative max-w-4xl w-full mx-4">
             <VideoPlayer
-              src="http://static-src.heaven96.site/12%E6%9C%888%E6%97%A5%20%281%29.mp4"
+              src="/demo-video.mp4"
               className="w-full h-auto rounded-lg"
               autoPlay={true}
               showCloseButton={true}
