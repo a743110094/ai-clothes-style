@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ArrowRight, Play, Zap, X } from 'lucide-react';
+import { ArrowRight, Play, Zap } from 'lucide-react';
+import VideoPlayer from './VideoPlayer';
 
 const Hero: React.FC = () => {
   const [showVideoModal, setShowVideoModal] = useState(false);
@@ -68,20 +69,14 @@ const Hero: React.FC = () => {
       {showVideoModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
           <div className="relative max-w-4xl w-full mx-4">
-            <button
-              onClick={() => setShowVideoModal(false)}
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
-            >
-              <X className="w-8 h-8" />
-            </button>
-            <video
+            <VideoPlayer
               src="http://static-src.heaven96.site/12%E6%9C%888%E6%97%A5%20%281%29.mp4"
-              controls
-              autoPlay
               className="w-full h-auto rounded-lg"
-            >
-              您的浏览器不支持视频播放。
-            </video>
+              autoPlay={true}
+              showCloseButton={true}
+              onClose={() => setShowVideoModal(false)}
+              fallbackText="您的浏览器不支持视频播放，请尝试更新浏览器或使用其他浏览器。"
+            />
           </div>
         </div>
       )}
