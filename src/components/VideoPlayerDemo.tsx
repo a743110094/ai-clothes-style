@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import VideoPlayer from './VideoPlayer';
+import VideoJSPlayer from './VideoJSPlayer';
 
 const VideoPlayerDemo: React.FC = () => {
   const [showPlayer, setShowPlayer] = useState(false);
@@ -20,6 +20,8 @@ const VideoPlayerDemo: React.FC = () => {
         
         {/* 控制面板 */}
         <div className="bg-gray-800 rounded-lg p-6 mb-8">
+          <h2 className="text-xl font-semibold mb-2">Video.js 播放器演示</h2>
+          <p className="text-gray-300 text-sm mb-4">使用业界最流行的HTML5视频播放器，兼容性极佳</p>
           <h2 className="text-xl font-semibold mb-4">控制面板</h2>
           
           <div className="space-y-4">
@@ -61,48 +63,47 @@ const VideoPlayerDemo: React.FC = () => {
 
         {/* 功能特性展示 */}
         <div className="bg-gray-800 rounded-lg p-6 mb-8">
-          <h2 className="text-xl font-semibold mb-4">功能特性</h2>
+          <h2 className="text-xl font-semibold mb-4">Video.js 优势特性</h2>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div>
-              <h3 className="font-medium text-blue-400 mb-2">基础功能</h3>
+              <h3 className="font-medium text-green-400 mb-2">🎯 Video.js 核心优势</h3>
               <ul className="space-y-1 text-gray-300">
-                <li>✅ 播放/暂停控制</li>
-                <li>✅ 音量控制</li>
-                <li>✅ 进度条拖拽</li>
-                <li>✅ 全屏支持</li>
-                <li>✅ 键盘快捷键</li>
+                <li>⭐ GitHub 35k+ stars，业界最流行</li>
+                <li>🌍 全球数百万网站使用验证</li>
+                <li>🔄 持续维护更新，bug修复及时</li>
+                <li>📱 完美支持移动设备和触屏</li>
+                <li>♿ 内置无障碍功能支持</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-medium text-blue-400 mb-2">兼容性优化</h3>
+              <h3 className="font-medium text-blue-400 mb-2">🎮 完整播放功能</h3>
               <ul className="space-y-1 text-gray-300">
-                <li>✅ 多格式支持 (MP4, WebM, OGG)</li>
-                <li>✅ 错误处理和重试</li>
-                <li>✅ 移动端适配</li>
-                <li>✅ 加载状态显示</li>
-                <li>✅ 无障碍支持</li>
+                <li>▶️ 播放/暂停、进度拖拽控制</li>
+                <li>🔊 音量控制、静音切换</li>
+                <li>🖥️ 全屏和画中画模式</li>
+                <li>⚡ 播放速度调节 (0.25x - 4x)</li>
+                <li>🔄 循环播放、自动播放</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-medium text-blue-400 mb-2">高级功能</h3>
+              <h3 className="font-medium text-blue-400 mb-2">📱 跨平台兼容</h3>
               <ul className="space-y-1 text-gray-300">
-                <li>✅ 播放速度调节 (0.5x - 2x)</li>
-                <li>✅ 快进/快退 (10秒)</li>
-                <li>✅ 自动隐藏控制条</li>
-                <li>✅ 鼠标悬停显示控制</li>
-                <li>✅ 时间格式化显示</li>
+                <li>✅ Chrome、Firefox、Safari、Edge</li>
+                <li>✅ iOS Safari、Android Chrome</li>
+                <li>✅ 触屏手势支持</li>
+                <li>✅ 多格式自动回退</li>
+                <li>✅ 自适应响应式设计</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-medium text-blue-400 mb-2">键盘快捷键</h3>
+              <h3 className="font-medium text-blue-400 mb-2">⌨️ 键盘快捷键</h3>
               <ul className="space-y-1 text-gray-300">
                 <li>⏸️ 空格键：播放/暂停</li>
-                <li>⬅️ 左箭头：快退10秒</li>
-                <li>➡️ 右箭头：快进10秒</li>
-                <li>⬆️ 上箭头：音量+</li>
-                <li>⬇️ 下箭头：音量-</li>
-                <li>🔇 M键：静音</li>
-                <li>🖥️ F键：全屏</li>
+                <li>⬅️➡️ 左右箭头：快退/快进</li>
+                <li>⬆️⬇️ 上下箭头：音量调节</li>
+                <li>🔇 M键：静音切换</li>
+                <li>🖥️ F键：全屏切换</li>
+                <li>⌨️ 数字键：跳转时间点</li>
               </ul>
             </div>
           </div>
@@ -111,7 +112,7 @@ const VideoPlayerDemo: React.FC = () => {
         {/* 视频播放器 */}
         {showPlayer && (
           <div className="bg-black rounded-lg overflow-hidden">
-            <VideoPlayer
+            <VideoJSPlayer
               src={currentVideo}
               className="w-full h-auto"
               autoPlay={false}
