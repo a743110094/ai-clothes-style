@@ -3,18 +3,13 @@ import VideoPlayer from './VideoPlayer';
 
 const VideoPlayerDemo: React.FC = () => {
   const [showPlayer, setShowPlayer] = useState(false);
-  const [currentVideo, setCurrentVideo] = useState('http://static-src.heaven96.site/12%E6%9C%888%E6%97%A5%20%281%29.mp4');
+  const [currentVideo, setCurrentVideo] = useState('/demo-video.mp4');
 
   const testVideos = [
     {
       name: '本地演示视频',
       src: '/demo-video.mp4',
       description: '项目自带的演示视频，确保打包后可用'
-    },
-    {
-      name: '示例视频（需要网络）',
-      src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4',
-      description: '一个示例MP4视频，用于测试网络播放'
     }
   ];
 
