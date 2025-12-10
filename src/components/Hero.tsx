@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
           style={{ zIndex: 2147483647 }}
         >
           <VideoJSPlayer
-            src="/demo-video.mp4"
+            src="/demo-video.m3u8"
             className="w-full h-auto rounded-lg"
             autoPlay={true}
             showCloseButton={true}
